@@ -1,24 +1,134 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
-</head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="pl"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>...</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">...</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-</body>
-</html>
+Doctype html
+html lang=pl
+head
+meta charset=utf-8
+title Galeria OS Studenckie
+meta name=viewport content=width=device-width initial-scale=1.0
+link rel=stylesheet href=styles.css
+style
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --accent-color: #2c3e50;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--accent-color);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--accent-color);
+  padding: 5px 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section-title {
+  border-left: 5px solid var(--accent-color);
+  padding-left: 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+gallery-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+gallery-item p {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #eee;
+  margin-top: 50px;
+}
+head
+
+body
+header
+h1 Galeria OS Studenckie
+p Dokumentacja zajęć i prac projektowych
+nav
+a href=sekcja1 Doświadczenie
+a href=sekcja2 Performans
+a href=sekcja3 Sztuka Ciała
+a href=sekcja4 Sekcja 4
+a href=sekcja5 Sekcja 5
+a href=sekcja6 Sekcja 6
+a href=sekcja7 Sekcja 7
+a href=sekcja8 Sekcja 8
+a href=sekcja9 Sekcja 9
+a href=sekcja10 Sekcja 10
+a href=sekcja11 Sekcja 11
+a href=sekcja12 Sekcja 12
+a href=sekcja13 Sekcja 13
+div class=container
+
+h2 id=sekcja1 class=section-title 1. Doświadczenie
+div class=gallery-grid
+div class=gallery-item
+img src=https://via.placeholder.com/400x300 alt=Zdjęcie 1
+p strong Tytuł zdjęcia br Opis doświadczenia z pierwszego zajęcia. Tutaj możesz wpisać szczegóły dotyczące przebiegu pracy.
+div class=gallery-item
+img src=https://via.placeholder.com/400x300 alt=Zdjęcie 2
+p strong Tytuł performansu br Opis działań związanych z performansem studenckim.
+
+footer
+p &copy; 2024 OS Studenckie - Galeria Projektowa
